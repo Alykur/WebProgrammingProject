@@ -1,0 +1,137 @@
+body{
+    font-family : FreeMono, monospace;
+}
+
+header img{
+    padding:15px;
+}
+
+header{
+    padding:15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav{
+    border-top: 4px solid white;
+}
+
+nav a{
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-decoration-line:none;
+}
+
+section a:hover{
+    background-color: rgb(241, 239, 239);
+}
+
+div p{
+    text-align:start;
+    margin:20px;
+    text-align: justify;
+    font-size: large;
+}
+
+footer{
+    font-size: medium;
+    color:white;
+    padding:5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer a{
+    color: white;
+    text-decoration-line:none;
+}
+
+
+
+
+.home_page{
+    text-align: center;
+}
+
+.home_page header{
+    background-color: rgb(255, 218, 33);
+}
+
+.home_page footer{
+    background-color: rgb(255, 218, 33);
+}
+
+.home_page nav a:hover, .home_page footer a:hover{
+    background-color: rgb(254, 226, 90);
+}
+
+.home_page section a{
+    color:rgb(250, 197, 50);
+    text-decoration-line:none;
+}
+
+.home_page div{
+    border: 2px solid rgb(250, 197, 50);
+    border-radius: 10px;
+}
+
+.home_page h1, .home_page h2, .home_page h3{
+    display: inline-block;
+    border: 5px solid rgb(250, 197, 50);
+    background-color: rgb(250, 197, 50);
+    border-radius: 20px;
+    color:white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+.about_page{
+    text-align: center;
+}
+
+.about_page header{
+    background-color: rgb(163, 161, 252);
+}
+
+.about_page footer{
+    background-color: rgb(163, 161, 252);
+}
+
+.about_page nav a:hover, .about_page footer a:hover{
+    background-color: rgb(147, 145, 251);
+}
+
+.about_page section a{
+    color: rgb(146, 144, 248);
+    text-decoration-line:none;
+}
+
+.about_page h1{
+    display: inline-block;
+    border: 5px solid rgb(146, 144, 248);
+    background-color: rgb(146, 144, 248);
+    border-radius: 20px;
+    color:white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.about_page div{
+    text-align:start;
+    border: 2px solid rgb(146, 144, 248);
+    border-radius: 10px;
+}
+
+.about_page h2{
+    color: rgb(163, 161, 252);
+    margin:20px;
+}
+
+.about_page li{
+    font-size: larger;
+}
