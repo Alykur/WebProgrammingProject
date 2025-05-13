@@ -12,6 +12,11 @@ header {
     font-weight: bold;
 }
 
+header a:hover {
+    background-color: rgb(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
 nav {
     border-top: 4px solid white;
 }
@@ -26,7 +31,7 @@ nav a {
 }
 
 section a:hover {
-    background-color: rgb(241, 239, 239);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 div p {
@@ -49,6 +54,10 @@ footer a {
     text-decoration-line: none;
 }
 
+footer a:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
 /* HOME PAGE  */
 
 .home_page,
@@ -62,11 +71,6 @@ footer a {
 
 .home_page footer {
     background-color: rgb(255, 218, 33);
-}
-
-.home_page nav a:hover,
-.home_page footer a:hover {
-    background-color: rgb(254, 226, 90);
 }
 
 .home_page section a {
@@ -99,11 +103,6 @@ footer a {
 
 .about_page footer {
     background-color: rgb(163, 161, 252);
-}
-
-.about_page nav a:hover,
-.about_page footer a:hover {
-    background-color: rgb(147, 145, 251);
 }
 
 .about_page section a {
