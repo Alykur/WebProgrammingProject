@@ -160,6 +160,53 @@ footer a:hover {
     background-color: rgb(248, 117, 17);
 }
 
+.quiz_page fieldset {
+    margin-top: 2%;
+    border: 2px solid rgb(248, 117, 17);
+    border-radius: 15px;
+}
+
+.quiz_page {
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz_page input[type="button"] {
+    margin: 1%;
+    align-self: center;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(248, 117, 17);
+    color: rgb(248, 117, 17);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.quiz_page input[type="button"]:hover {
+    margin: 1%;
+    align-self: center;
+    background-color: rgb(248, 117, 17);
+    color: white;
+    box-shadow: 9px 9px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.quiz_page fieldset legend {
+    background-color: rgb(248, 117, 17);
+    padding: 0.5%;
+    color: white;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
 #tableAboutPage {
     align-self: center;
 }
