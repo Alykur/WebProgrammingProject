@@ -5,6 +5,7 @@
         <title>Neuro'Educ - Quiz</title>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="../css/styles.css" />
+        <script src="../js/quiz.js"></script>
     </head>
 
     <body class="quiz_page">
@@ -58,7 +59,13 @@
                     <li>What is Autism ?</li>
                 </p>
                 <div>
-                    <input type="radio" id="answer" />
+                    <input
+                        type="radio"
+                        id="answer"
+                        name="q1_autism_checkbox"
+                        id="q1_optA"
+                        value="A"
+                    />
                     <label for="answer"
                         >A - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.</label
@@ -66,7 +73,13 @@
                 </div>
 
                 <div>
-                    <input type="radio" id="answer" />
+                    <input
+                        type="radio"
+                        id="answer"
+                        name="q1_autism_checkbox"
+                        id="q1_optB"
+                        value="B"
+                    />
                     <label for="answer"
                         >B - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.</label
@@ -74,7 +87,7 @@
                 </div>
 
                 <div>
-                    <input type="radio" id="answer" />
+                    <input type="radio" id="answer" name="q1_autism_checkbox" id="q1_optC" />
                     <label for="answer"
                         >C - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.</label
@@ -115,7 +128,7 @@
             </ol>
         </fieldset>
 
-        <input type="button" value="Submit" />
+        <input type="button" value="Submit" id="submitButtonID" />
 
         <footer>
             <p>
