@@ -49,12 +49,12 @@ footer a{
     text-decoration-line:none;
 }
 
-
-
-
-.home_page{
+.home_page, .about_page{
     text-align: center;
 }
+
+
+
 
 .home_page header{
     background-color: rgb(255, 218, 33);
@@ -90,9 +90,6 @@ footer a{
 
 
 
-.about_page{
-    text-align: center;
-}
 
 .about_page header{
     background-color: rgb(163, 161, 252);
@@ -132,6 +129,34 @@ footer a{
     margin:20px;
 }
 
-.about_page li{
+.about_page caption{
     font-size: larger;
+    font-weight: bold;
+    color: rgb(146, 144, 248);
+}
+
+.about_page th{
+    font-size: large;
+    color: rgb(146, 144, 248);
+}
+
+.about_page td{
+    text-align: center;
+    border: 2px solid rgb(146, 144, 248);
+    border-radius: 10px;
+}
+
+.about_page td:hover{
+    background-color: rgb(241, 239, 239);
+}
+
+
+
+
+.quiz_page header{
+    background-color: rgb(248, 117, 17);
+}
+
+.quiz_page footer{
+    background-color: rgb(248, 117, 17);
 }
