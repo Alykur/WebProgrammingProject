@@ -227,3 +227,18 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
 }
+
+#sectionTextsBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textsBlock {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
