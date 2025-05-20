@@ -120,11 +120,6 @@ footer a:hover {
     padding-right: 100px;
 }
 
-.about_page div {
-    text-align: start;
-    border: 2px solid rgb(146, 144, 248);
-    border-radius: 10px;
-}
 
 .about_page h2 {
     color: rgb(163, 161, 252);
@@ -239,6 +234,17 @@ footer a:hover {
     flex-direction: column;
     width: 50%;
     align-self: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.project-layout-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(146, 144, 248);
+    border-radius: 10px;
     margin-top: 1%;
     margin-bottom: 1%;
 }
