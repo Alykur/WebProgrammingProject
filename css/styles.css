@@ -1,5 +1,13 @@
 body {
     font-family: FreeMono, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
 header img {
@@ -12,7 +20,8 @@ header {
     font-weight: bold;
 }
 
-header a:hover {
+header .html a:hover {
+    text-decoration-line: none;
     background-color: rgb(0, 0, 0, 0.15);
     border-radius: 5px;
 }
@@ -24,10 +33,12 @@ nav {
 nav a {
     font-size: x-large;
     color: white;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-decoration-line: none;
+    justify-content: space-evenly;
+}
+
+section, fieldset{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 section a:hover {
@@ -51,106 +62,142 @@ footer {
 
 footer a {
     color: white;
-    text-decoration-line: none;
+    font-size: larger;
+    padding: 10px;
 }
 
 footer a:hover {
+    text-decoration-line: none;
     background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border:none;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+#backToTop:hover {
+  opacity: 1;
+}
+
+.home_page,
+.about_page, .testimonies_page, .resources_page {
+    text-align: center;
 }
 
 /* HOME PAGE  */
 
-.home_page,
-.about_page {
-    text-align: center;
-}
-
 .home_page header {
-    background-color: rgb(255, 218, 33);
+    background-color: rgb(255, 207, 33);
 }
 
 .home_page footer {
-    background-color: rgb(255, 218, 33);
+    background-color: rgb(255, 207, 33);
+}
+
+.home_page section{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .home_page section a {
-    color: rgb(250, 197, 50);
+    color: rgb(255, 210, 47);
     text-decoration-line: none;
 }
 
 .home_page div {
-    border: 2px solid rgb(250, 197, 50);
+    border: 2px solid rgb(255, 210, 47);
     border-radius: 10px;
+    margin-top:15px;
+    margin-bottom: 15px;
 }
 
 .home_page h1,
 .home_page h2,
 .home_page h3 {
     display: inline-block;
-    border: 5px solid rgb(250, 197, 50);
-    background-color: rgb(250, 197, 50);
+    border: 5px solid rgb(244, 201, 45);
+    background-color: rgb(244, 201, 45);
     border-radius: 20px;
     color: white;
     padding-left: 100px;
     padding-right: 100px;
 }
 
-/* ABOUT PAGE  */
-
-.about_page header {
-    background-color: rgb(163, 161, 252);
+.home_page img[alt="Pic"]{
+    min-width: 400px;
+    padding: 10px;
 }
 
-.about_page footer {
-    background-color: rgb(163, 161, 252);
+/* TESTIMONIES PAGE  */
+
+.testimonies_page header {
+    background-color: rgb(97, 132, 248);
 }
 
-.about_page section a {
-    color: rgb(146, 144, 248);
-    text-decoration-line: none;
+.testimonies_page footer {
+    background-color: rgb(97, 132, 248);
 }
 
-.about_page h1 {
+.testimonies_page fieldset{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 2px solid rgb(97, 132, 248);
+    border-radius: 15px;
+}
+
+.testimonies_page legend{
+    color:rgb(97, 132, 248);
+    font-size:x-large;
+    font-weight: bolder;
+    border: 5px solid rgb(97, 132, 248);
+    background-color: rgb(97, 132, 248);
+    border-radius: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* RESOURCES PAGE  */
+
+.resources_page header {
+    background-color: rgb(63, 198, 83);
+}
+
+.resources_page footer {
+    background-color: rgb(63, 198, 83);
+}
+
+.resources_page h2{
     display: inline-block;
-    border: 5px solid rgb(146, 144, 248);
-    background-color: rgb(146, 144, 248);
+    text-align: center;
+    border: 5px solid rgb(63, 198, 83);
+    background-color: rgb(63, 198, 83);
     border-radius: 20px;
     color: white;
     padding-left: 100px;
     padding-right: 100px;
 }
 
-.about_page div {
-    text-align: start;
-    border: 2px solid rgb(146, 144, 248);
+
+.resources_page div{
+    border: 2px solid rgb(63, 198, 83);
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.about_page h2 {
-    color: rgb(163, 161, 252);
-    margin: 20px;
-}
-
-.about_page caption {
-    font-size: larger;
-    font-weight: bold;
-    color: rgb(146, 144, 248);
-}
-
-.about_page th {
-    font-size: large;
-    color: rgb(146, 144, 248);
-}
-
-.about_page td {
-    text-align: center;
-    border: 2px solid rgb(146, 144, 248);
-    border-radius: 10px;
-}
-
-.about_page td:hover {
-    background-color: rgb(241, 239, 239);
-}
+/* QUIZ PAGE  */
 
 .quiz_page header {
     background-color: rgb(248, 117, 17);
@@ -187,6 +234,7 @@ footer a:hover {
     font-size: large;
     font-weight: 600;
     letter-spacing: 1px;
+    transition: all 0.5s ease-out;
 }
 
 .quiz_page input[type="button"]:hover {
@@ -199,12 +247,14 @@ footer a:hover {
 
 .quiz_page fieldset legend {
     background-color: rgb(248, 117, 17);
-    padding: 0.5%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: white;
-    letter-spacing: 0.5px;
-    border-radius: 10px;
-    text-decoration: underline;
-    font-weight: 600;
+    border-radius: 20px;
+    font-size: x-large;
+    font-weight: bold;
 }
 
 .form_text_field {
@@ -228,17 +278,46 @@ footer a:hover {
     justify-content: center;
 }
 
-#sectionTextsBlock {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* ABOUT PAGE  */
+
+.about_page header {
+    background-color: rgb(163, 161, 252);
 }
 
-.textsBlock {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-self: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
+.about_page nav a{
+    margin-top: 20px;
+}
+
+.about_page footer {
+    background-color: rgb(163, 161, 252);
+}
+
+.about_page section a {
+    color: rgb(146, 144, 248);
+    text-decoration-line: none;
+}
+
+.about_page h1 {
+    display: inline-block;
+    border: 5px solid rgb(146, 144, 248);
+    background-color: rgb(146, 144, 248);
+    border-radius: 20px;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.about_page div {
+    text-align: start;
+    border: 2px solid rgb(146, 144, 248);
+    border-radius: 10px;
+}
+
+.about_page h2 {
+    color: rgb(163, 161, 252);
+    margin: 20px;
+}
+
+.about_page section{
+    margin-bottom: 15px;
 }
