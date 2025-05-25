@@ -6,43 +6,59 @@
         <meta charset="UTF-8"> 
         <link rel= "stylesheet" href="../css/base.css">
         <link rel= "stylesheet" href="../css/know.css">
-        <script src="../js/UI.js"></script>
+        <script src="../js/top_button.js"></script>
     </head>
 
-    <body class="testimonies_page">
+    <body class="know_page">
         <header>
-            <a href="./home.html"> 
+            <div class="logo">
+                <a href="./home.html"> 
                 <img src = "../img/Logo.png" alt = "Neuro'Educ_Logo" width="250" height="125">
-            </a>
-            <nav>
-                <br>
-                <a href="./know.html">Must Know</a>
-                <a href="./quiz.html">Quiz</a>
-                <a href="./testimonies.html">Testimonies</a>
-                <a href="./resources.html">Resources</a>
+                </a>
+            </div>
+            <nav label="Main navigation">
+                <ul>
+                    <li><a href="./know.html">Must Know</a></li>
+                    <li><a href="./testimonies.html">Testimonies</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
+                    <li><a href="./quiz.html">Quiz</a></li>
+                </ul>
             </nav>
         </header>
         
-        <fieldset>
-            <legend>What you must know about autism</legend>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </fieldset>
+        <main>
+            <section class="text-block">
+                <h1>What you must know about autism</h1>
+                <p>
+                    Autism spectrum disorder (ASD) is a complex developmental condition that affects communication, behavior, and social interaction. It is estimated that 1 in 36 children are diagnosed with ASD, according to the <a href="https://www.cdc.gov/autism/data-research/?CDC_AAref_Val=https://www.cdc.gov/ncbddd/autism/data.html" target="_blank">CDC's latest data</a>. Autism presents differently in each individual, ranging from highly verbal to non-verbal, and often involves unique strengths alongside challenges. Understanding the diversity within the spectrum is essential to foster acceptance and provide appropriate support.
+                </p>
+                <p>
+                    ASD is usually identified in early childhood, though it can be diagnosed at any age. Early diagnosis and intervention can help improve learning and development. Autism is not a disease and cannot be cured, but with proper support, individuals with autism can lead fulfilling lives.
+                </p>
+                <p>
+                    People with autism may have different sensory experiences, such as being more sensitive to sounds, lights, or touch. These sensory differences can sometimes cause discomfort or anxiety. Understanding these unique responses is important for creating supportive environments, both at home and in schools.
+                </p>
+                <p>
+                    Autism affects individuals across all racial, ethnic, and socioeconomic groups. It is important to recognize and respect the wide range of abilities and needs within the autism community. Encouraging acceptance and providing appropriate accommodations helps people with autism participate fully in society.
+                </p>
+            </section>
 
-        <section class="video">
-            <h1>Understanding Autism: Watch & Learn</h1>
-            <p>Here’s a short video to help you better understand autism spectrum disorder and how to support those who live with it:</p>
-            <video controls width="640" height="360">
-                <source src="../mp4/video.mp4">
-            </video>
-        </section>
+            <section class="video-block">
+                <div class="caption">
+                    <h1>Understanding Autism</h1>
+                    <p>This short <a href="https://www.youtube.com/watch?v=rP1S8ip4VVE" target="blanck">video</a> provides insights into autism spectrum disorder, helping viewers gain a better understanding of the condition.</p>
+                </div>
+
+                <div class="video">
+                    <video controls width="550">
+                        <source src="../mp4/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+        </main>
         
+        <button id="backToTop">↑ Top</button>
+
         <footer>
             <p>©2025 Kim Lan TRAN & Thomas LOESCH - All rights reserved</p>
             <p><a href="./about.html">Want to find out more about us ?</a></p>

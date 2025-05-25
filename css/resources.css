@@ -1,4 +1,4 @@
-.resources_page{
+.resources_page {
     text-align: center;
 }
 
@@ -6,25 +6,52 @@ header, footer {
     background-color: rgb(63, 198, 83);
 }
 
-h2{
-    display: inline-block;
-    border: 5px solid rgb(63, 198, 83);
+h1 {
+    margin: 20px auto;
     background-color: rgb(63, 198, 83);
-    border-radius: 20px;
+    padding: 5px 100px;
     color: white;
-    padding-left: 100px;
-    padding-right: 100px;
+    border-radius: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    display: table;
 }
 
 
-section{
+main {
+    display: flex;
+    gap: 10px;
+    align-items: normal;
+    margin: 20px;
+}
+
+section {
+    background-color: rgb(227, 253, 230);
     border: 2px solid rgb(63, 198, 83);
     border-radius: 20px;
-    margin:20px 20px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
 }
 
-div{
-    justify-content: justify;
-    margin: 0;
+section h2, section h3 {
+    color: rgb(63, 198, 83);
+}
+
+section ul {
     padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section a {
+    color: rgb(63, 198, 83);
+    text-decoration-line: none;
+}
+
+section a:hover {
+    background-color: rgb(0, 0, 0, 0.1);
 }

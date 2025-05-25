@@ -2,7 +2,7 @@ header, footer {
     background-color: rgb(255, 207, 33);
 }
 
-section{
+#neuro-educ{
     display: block;
     margin: 20px 20px;
     border: 2px solid rgb(255, 207, 33);
@@ -26,10 +26,32 @@ h1 {
     padding-right: 100px;
 }
 
+#block {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+
+.block-text {
+  padding: 10px;
+  border: 2px solid rgb(255, 207, 33);
+  border-radius: 20px;
+  background-color: rgba(255, 207, 33, 0.05);
+}
+
+.block-text p {
+  text-align: justify;
+}
+
+.block-img {
+  width:300px;
+}
+                
+
 div {
-  text-align: center;
+    text-align: center;
 }
 
 p {
-  margin: 0px 30px 30px 30px;
+    margin: 0px 30px 30px 30px;
 }

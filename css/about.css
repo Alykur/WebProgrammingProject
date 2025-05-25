@@ -6,13 +6,18 @@ header, footer {
     background-color: rgb(163, 161, 252);
 }
 
+.logo{
+    border: none;
+    margin-bottom: 0;
+}
+
 section a {
     color: rgb(146, 144, 248);
     text-decoration-line: none;
 }
 
 h1 {
-    display: inline-block;
+    display: table;
     border: 5px solid rgb(146, 144, 248);
     background-color: rgb(146, 144, 248);
     border-radius: 20px;

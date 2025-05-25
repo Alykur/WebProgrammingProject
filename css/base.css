@@ -71,20 +71,22 @@ footer p, footer a {
 }
 
 #backToTop {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  background-color: black;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border:none;
-  font-size: 15px;
-  opacity: 0.5;
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 #backToTop:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .project-layout-section {
