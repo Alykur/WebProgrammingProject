@@ -1,0 +1,37 @@
+.about_page{
+    align-content: center;
+}
+
+header, footer {
+    background-color: rgb(163, 161, 252);
+}
+
+section a {
+    color: rgb(146, 144, 248);
+    text-decoration-line: none;
+}
+
+h1 {
+    display: inline-block;
+    border: 5px solid rgb(146, 144, 248);
+    background-color: rgb(146, 144, 248);
+    border-radius: 20px;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+div {
+    border: 2px solid rgb(146, 144, 248);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: rgb(163, 161, 252);
+    margin: 20px;
+}
+
+p{
+    margin: 20px;
+}

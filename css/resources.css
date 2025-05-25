@@ -1,0 +1,30 @@
+.resources_page{
+    text-align: center;
+}
+
+header, footer {
+    background-color: rgb(63, 198, 83);
+}
+
+h2{
+    display: inline-block;
+    border: 5px solid rgb(63, 198, 83);
+    background-color: rgb(63, 198, 83);
+    border-radius: 20px;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+section{
+    border: 2px solid rgb(63, 198, 83);
+    border-radius: 20px;
+    margin:20px 20px;
+}
+
+div{
+    justify-content: justify;
+    margin: 0;
+    padding-left: 20px;
+}
