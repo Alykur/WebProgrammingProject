@@ -86,3 +86,23 @@ footer p, footer a {
 #backToTop:hover {
   opacity: 1;
 }
+
+.project-layout-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(146, 144, 248);
+    border-radius: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 50vh;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.project-layout-section.is-visible {
+    opacity: 1; 
+    transform: translateY(0);
+}
