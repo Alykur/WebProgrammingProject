@@ -41,7 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 break;  
         }
 
-        
+        let p = document.createAttribute("p");
+        p.textContent = "Correct !";
+        p.style.color = "green";
+        p.style.fontWeight = "bold";
+        divChosenQuestion1.appendChild(p);
+
+
 
     });
 
