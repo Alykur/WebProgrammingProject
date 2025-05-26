@@ -164,10 +164,16 @@ const processQuestion2 = (answers) => {
 }
 
 const processQuestion3 = (answer) => {
+
+    if(!answer){
+        return;
+    }
+
+    let div = document.getElementById("question3");
+    let p = document.createElement("p");
+    
     for(let word of wordsIncludedInQuestion3){
         if(answer.toLowerCase().includes(word.toLocaleLowerCase())){
-            let div = document.getElementById("question3");
-            let p = document.createElement("p");
             p.textContent = "Correct !";
             p.style.color = "green";
             p.style.fontWeight = "bold";
@@ -177,4 +183,13 @@ const processQuestion3 = (answer) => {
             return;
         }
     }
+    
+
+    p.textContent = "False !";
+    p.style.color = "red";
+    p.style.fontWeight = "bold";
+    p.style.fontSize = "large";
+
+    div.appendChild(p);
+
 }
