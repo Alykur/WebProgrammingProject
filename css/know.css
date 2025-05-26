@@ -116,5 +116,7 @@ a:hover{
 }
 
 #send-button:hover {
-    
+    background-color: white;
+    color: rgb(105, 235, 172);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
