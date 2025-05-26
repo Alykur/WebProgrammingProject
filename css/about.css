@@ -9,8 +9,9 @@ header, footer {
 }
 
 .logo{
-    border: none;
+    margin-top: 0;
     margin-bottom: 0;
+    border: none;
 }
 
 section a {
