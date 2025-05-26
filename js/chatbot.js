@@ -84,12 +84,6 @@ function saveMessages() {
 function loadMessages() {
     const chatHistory = JSON.parse(sessionStorage.getItem('chatHistory'));
     if (chatHistory && chatHistory.length > 0) {
-        const chatBox = document.getElementById("chat-box");
-        chatBox.innerHTML += `
-            <div class="session-separator">
-                <em>Previous session messages:</em>
-            </div>
-        `;
         chatHistory.forEach(message => {
             showMessage(message.message, message.sender, message.time, true);
         });
