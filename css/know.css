@@ -50,10 +50,10 @@ video {
 }
 
 a{
-    text-decoration-line: none;
     color:rgb(105, 235, 172);
 }
 
 a:hover{
+    text-decoration-line: none;
     background-color:rgb(0,0,0,0.1);
 }
