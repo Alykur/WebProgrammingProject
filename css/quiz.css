@@ -18,6 +18,12 @@ form {
     padding: 20px;
 }
 
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2%);
+    transition: 0.3s ease;
+}
+
 form div {
     font-weight:100;
     color:black;
