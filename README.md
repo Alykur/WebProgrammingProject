@@ -27,11 +27,12 @@ This project serves as the central hub for Neuro'Educ's educational initiatives,
 
 Our website is designed with accessibility and clarity in mind, offering a range of features to support learning and understanding:
 
-*   **Home** 
+*   **Home** : Access it by clicking on the Logo
 *   **Must Know** 
 *   **Testimonies** 
 *   **Resources**
-*   **Quiz** 
+*   **Quiz**
+*   **About us** : Access it by clicking on the link in the footer
 
 ---
 
