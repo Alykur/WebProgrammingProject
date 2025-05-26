@@ -1,0 +1,79 @@
+{
+  "intents": [
+    {
+      "tag": "greet",
+      "patterns": ["Hello", "Hi", "Hey there"],
+      "responses": ["Hello! How can I assist you regarding autism ?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you", "Talk to you later"],
+      "responses": ["Goodbye! Feel free to come back with any questions about autism."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Appreciate your help"],
+      "responses": ["You're welcome! I'm here to support you."]
+    },
+    {
+      "tag": "what_is_autism",
+      "patterns": ["What is autism ?", "Define autism", "Can you explain autism ?"],
+      "responses": ["Autism, or Autism Spectrum Disorder (ASD), is a developmental condition that affects communication, behavior, and social interactions. It varies widely in severity and symptoms."]
+    },
+    {
+      "tag": "autism_signs",
+      "patterns": ["What are the signs of autism?", "How do I know if someone has autism?", "Early signs of autism"],
+      "responses": ["Signs of autism can include difficulty with social interactions, repetitive behaviors, intense focus on specific interests, and challenges with communication. Every individual is unique."]
+    },
+    {
+      "tag": "autism_diagnosis",
+      "patterns": ["How is autism diagnosed?", "Getting an autism diagnosis", "Autism screening"],
+      "responses": ["Autism is diagnosed through behavioral assessments by healthcare professionals, often involving developmental history, observation, and standardized testing."]
+    },
+    {
+      "tag": "support_for_autism",
+      "patterns": ["How can I support someone with autism?", "Supporting autistic individuals"],
+      "responses": ["Support includes patience, clear communication, sensory considerations, and creating inclusive environments. Listening to the individual's needs is key."]
+    },
+    {
+      "tag": "autism_treatments",
+      "patterns": ["Are there treatments for autism?", "Therapies for autism", "How is autism managed?"],
+      "responses": ["While there is no cure, therapies like speech, occupational, and behavioral therapy can help individuals with autism thrive and develop important skills."]
+    },
+    {
+      "tag": "autism_resources",
+      "patterns": ["Where can I find resources about autism?", "Autism support organizations", "Learning about autism"],
+      "responses": ["You can explore websites like Autism Speaks, the Autism Society, or local support groups for helpful resources, toolkits, and community support."]
+    },
+    {
+      "tag": "autism_myths",
+      "patterns": ["Common myths about autism", "Is it true that...", "Autism misconceptions"],
+      "responses": ["A common myth is that all autistic people are nonverbal or have savant skills. In reality, autism is a spectrum, and experiences vary widely."]
+    },
+    {
+      "tag": "neurodiversity",
+      "patterns": ["What is neurodiversity?", "Meaning of neurodiversity", "Neurodiversity and autism"],
+      "responses": ["Neurodiversity is the idea that differences in brain function and behavior are natural variations of the human experience, including autism, ADHD, dyslexia, and more."]
+    },
+    {
+      "tag": "autism_in_adults",
+      "patterns": ["Can adults have autism?", "Adult autism", "Late autism diagnosis"],
+      "responses": ["Yes, autism can be diagnosed in adults. Many people are diagnosed later in life after recognizing traits that were previously misunderstood or unnoticed."]
+    },
+    {
+      "tag": "autism_in_girls",
+      "patterns": ["Is autism different in girls?", "Autism signs in girls", "Female autism"],
+      "responses": ["Autism in girls may present differently, often with more subtle social difficulties and better masking. As a result, it is sometimes underdiagnosed."]
+    },
+    {
+      "tag": "autism_acceptance",
+      "patterns": ["What is autism acceptance ?", "Difference between awareness and acceptance"],
+      "responses": ["Autism acceptance means valuing autistic individuals as they are and ensuring they are included, supported, and respected in all aspects of life."]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["I'm sorry, I didn't quite understand that. Could you rephrase your question about autism ?"]
+    }
+  ]
+}

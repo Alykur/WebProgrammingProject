@@ -7,6 +7,7 @@
         <link rel= "stylesheet" href="../css/base.css">
         <link rel= "stylesheet" href="../css/know.css">
         <script src="../js/top_button.js"></script>
+        <script src="../js/chatbot.js"></script>
     </head>
 
     <body class="know_page">
@@ -56,6 +57,13 @@
                 </div>
             </section>
         </main>
+
+        <section id="chatbot">
+            <h1>Chatbot</h1>
+            <div id='chat-box'></div>
+            <input type="text" id="user-input" placeholder="Ask your question...">
+            <input type="button" id="send-button" value="Send" onclick="fetchJSON('../json/intents.json')">
+        </section>
         
         <button id="backToTop">↑ Top</button>
 
