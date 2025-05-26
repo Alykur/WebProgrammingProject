@@ -85,6 +85,7 @@ function loadMessages() {
     const chatHistory = JSON.parse(sessionStorage.getItem('chatHistory'));
     if (chatHistory && chatHistory.length > 0) {
         chatHistory.forEach(message => {
+            historyMessages.addMessage(message);
             showMessage(message.message, message.sender, message.time, true);
         });
     }
