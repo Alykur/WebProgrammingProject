@@ -44,6 +44,8 @@ Neuro'Educ is built using modern web technologies to ensure a fast, robust, and 
     *  HTML
     *  CSS
     *  Javascript
+*  **Backend**
+    *  Javascript 
 
 ---
 
