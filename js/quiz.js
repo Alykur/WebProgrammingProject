@@ -25,8 +25,24 @@ document.addEventListener("DOMContentLoaded", () => {
         const answerQuestion3 = document.querySelector("input[type='text'][name='question3']");
         console.log("Question 3: " + answerQuestion3.value);
 
+        let divChosenQuestion1;
+
+        switch (checkBoxCheckedQuestion1.value) {
+            case "A":
+                divChosenQuestion1 = document.getElementById("divQuestion1AnswerA");
+                break;
+            case "B":
+                divChosenQuestion1 = document.getElementById("divQuestion1AnswerB");
+                break;
+            case "C":
+                divChosenQuestion1 = document.getElementById("divQuestion1AnswerC");
+                break;
+            default:
+                break;  
+        }
+
         
-        
+
     });
 
 });
