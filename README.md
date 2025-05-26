@@ -15,11 +15,6 @@
 *   [💻 Getting Started](#-getting-started)
     *   [Prerequisites](#prerequisites)
     *   [Installation](#installation)
-    *   [Running the Project](#running-the-project)
-*   [🤝 Contributing](#-contributing)
-*   [📄 License](#-license)
-*   [📞 Contact](#-contact)
-*   [🙏 Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -62,8 +57,6 @@ To get a local copy up and running, follow these simple steps.
 
 Ensure you have the following installed on your machine:
 
-*   [Node.js](https://nodejs.org/en/) (LTS version recommended)
-*   [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 *   [Git](https://git-scm.com/)
 
 ### Installation
