@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Value for question 1
         const checkBoxCheckedQuestion1 = document.querySelector("input[type='radio'][name='question1']:checked")
+        const answerQuestion1 = checkBoxCheckedQuestion1.value;
         console.log("Question 1: " + checkBoxCheckedQuestion1.value);
 
         // Values for question 2
@@ -22,8 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Question 2: " + JSON.stringify(answersQuestion2));
 
         //Value for question 3
-        const answerQuestion3 = document.querySelector("input[type='text'][name='question3']");
+        const answerQuestion3 = document.querySelector("input[type='text'][name='question3']").value;
         console.log("Question 3: " + answerQuestion3.value);
+
+
 
         let divChosenQuestion1;
 
@@ -41,11 +44,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 break;  
         }
 
-        let p = document.createAttribute("p");
-        p.textContent = "Correct !";
-        p.style.color = "green";
-        p.style.fontWeight = "bold";
+        let p = document.createElement("p");
+        if(answerQuestion1 === answersQuizQuestions1and2.question1) {
+            p.textContent = "Correct !";
+            p.style.color = "green";
+            p.style.fontWeight = "bold";
+        } else {
+            p.textContent = "False !";
+            p.style.color = "red";
+            p.style.fontWeight = "bold";
+        }
+
         divChosenQuestion1.appendChild(p);
+    
 
 
 
