@@ -17,7 +17,7 @@
                 <img src = "../img/Logo.png" alt = "Neuro'Educ_Logo" width="250" height="125">
                 </a>
             </div>
-            <nav label="Main navigation">
+            <nav>
                 <ul>
                     <li><a href="./know.html">Must Know</a></li>
                     <li><a href="./testimonies.html">Testimonies</a></li>
@@ -31,8 +31,9 @@
             <form>
                 <fieldset id="quiz">
                     <legend>Quiz</legend>
-                        <div class="questions" id="question1">
-                            <p>What is Autism?</p>
+                    <ol>
+                        <li>
+                            What is Autism?
                             <div id="divQuestion1AnswerA" class="divQuestion1">
                                 <input type="radio" name="question1" value="A"/>
                                 <label for="q1a">A - A mental illness that can be cured with medication.</label>
@@ -45,32 +46,33 @@
                                 <input type="radio" name="question1" value="C"/>
                                 <label for="q1c">C - A type of physical disability affecting mobility.</label>
                             </div>
-                        </div>
+                        </li>
 
-                        <div style="display: none;" class="questions" id="question2">
-                            <p>Which of the following are common characteristics of autism? (Select all that apply)</p>
-                            <div id="divQuestion2AnswerA" class="divQuestion2">
+                        <li>
+                            Which of the following are common characteristics of autism? (Select all that apply)
+                            <div id="divQuestion2AnswerA">
                                 <input type="checkbox" name="question2" value="A"/>
                                 <label for="q2a">A - Difficulty with social interactions</label>
                             </div>
-                            <div id="divQuestion2AnswerB" class="divQuestion2">
+                            <div id="divQuestion2AnswerB">
                                 <input type="checkbox" name="question2" value="B"/>
                                 <label for="q2b">B - Repetitive behaviors</label>
                             </div>
-                            <div id="divQuestion2AnswerC" class="divQuestion2">
+                            <div id="divQuestion2AnswerC">
                                 <input type="checkbox" name="question2" value="C"/>
                                 <label for="q2c">C - Preference for structured routines</label>
                             </div>
-                            <div id="divQuestion2AnswerD" class="divQuestion2">
+                            <div id="divQuestion2AnswerD">
                                 <input type="checkbox" name="question2" value="D"/>
                                 <label for="q2d">D - Always having an intellectual disability</label>
                             </div>
-                        </div>
+                        </li>
 
-                        <div style="display: none;" class="questions" id="question3">
-                            <p>Give an example of a common stereotype about autism :</p>
+                        <li>
+                            Give an example of a common stereotype about autism :
                             <input type="text" class="form_text_field" placeholder="Enter a stereotype..." name="question3"/>
-                        </div>
+                        </li>
+                    </ol>
                 <fieldset>
 
                 <button type="button" id="submitButtonID">Submit</button>

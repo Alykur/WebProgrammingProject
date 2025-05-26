@@ -10,7 +10,8 @@ header, footer {
 section {
     border-radius: 20px;
     border: none;
-    padding: 20px; 
+    margin: 20px;
+    padding:20px; 
     text-align: justify;
     border: 2px solid rgb(105, 235, 172);
     background-color: rgb(223, 245, 234);
@@ -40,7 +41,6 @@ main {
     border: 2px solid rgb(105, 235, 172);
     border-radius: 20px;
     background-color: rgb(223, 245, 234);
-    margin: auto;
     font-size: large;
 }
 
