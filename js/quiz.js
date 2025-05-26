@@ -3,6 +3,7 @@ const answersQuizQuestions1and2 = {question1 : "B", question2: "[A, B, C]"}
 const wordsIncludedInQuestion3 = ["empathy", "savant", "genius", "immature", "eye contact", "social", "difficulties", "emotionless"]
 
 document.addEventListener("DOMContentLoaded", () => {
+
     let buttonSubmit = document.getElementById("submitButtonID");
 
     buttonSubmit.addEventListener("click", () => {
@@ -12,6 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const answerQuestion1 = checkBoxCheckedQuestion1.value;
         console.log("Question 1: " + checkBoxCheckedQuestion1.value);
 
+        // Display the question 2 if a checkbox is checked
+        if(checkBoxCheckedQuestion1.value){
+            const question2 = document.getElementById("question2");
+            question2.style.display = "block";
+        }
+
         // Values for question 2
         const checkBoxCheckedQuestion2 = document.querySelectorAll("input[type='checkbox'][name='question2']:checked");
         let answersQuestion2 = [];
@@ -19,6 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
         checkBoxCheckedQuestion2.forEach((checkbox) => {
             answersQuestion2.push(checkbox.value);
         })
+
+        // Display the question 3 if at least one checkbox is checked
+        if(answersQuestion2.length > 0) {
+            const question3 = document.getElementById("question3");
+            question3.style.display = "block";
+        }
 
         console.log("Question 2: " + JSON.stringify(answersQuestion2));
 
