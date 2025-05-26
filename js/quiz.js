@@ -93,6 +93,21 @@ const processQuestion2 = (answers) => {
     }
 
     for(let letter of answers){
+        divChosenQuestion2 = document.getElementById("divQuestion2Answer" + letter);
+        let p = document.createElement("p");
 
+        if(answersQuizQuestions1and2.question2.includes(letter)){
+            p.textContent = "Correct !";
+            p.style.color = "green";
+            p.style.fontWeight = "bold";
+        } else {
+            p.textContent = "False !";
+            p.style.color="red";
+            p.style.fontWeight = "bold";
+        }
+
+        divChosenQuestion2.appendChild(p);
     }
+
+
 }
