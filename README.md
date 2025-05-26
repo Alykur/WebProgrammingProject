@@ -1,8 +1,5 @@
 # 🧠 Neuro'Educ | Empowering Understanding of Autism
 
-![Neuro'Educ Logo Placeholder](https://via.placeholder.com/150/007bff/FFFFFF?text=Neuro'Educ)
-*(You might replace this with your actual logo later!)*
-
 **Neuro'Educ is a comprehensive online platform dedicated to fostering understanding, acceptance, and empowerment around autism.** Our mission is to provide accurate, evidence-based, and accessible information to individuals, families, educators, and the wider community, bridging the knowledge gap and promoting a more inclusive world.
 
 ---
