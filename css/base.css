@@ -33,7 +33,7 @@ header a{
     color: white;
 }
 
-header nav a:hover, footer a:hover {
+header nav li a:hover, footer a:hover {
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-decoration-line: none;
