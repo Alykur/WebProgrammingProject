@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         processQuestion1(answerQuestion1);
         processQuestion2(answersQuestion2);
+        processQuestion3(answerQuestion3);
     
     });
 
@@ -160,4 +161,20 @@ const processQuestion2 = (answers) => {
     }
 
 
+}
+
+const processQuestion3 = (answer) => {
+    for(let word of wordsIncludedInQuestion3){
+        if(answer.toLowerCase().includes(word.toLocaleLowerCase())){
+            let div = document.getElementById("question3");
+            let p = document.createElement("p");
+            p.textContent = "Correct !";
+            p.style.color = "green";
+            p.style.fontWeight = "bold";
+            p.style.fontSize = "large";
+
+            div.appendChild(p);
+            return;
+        }
+    }
 }
