@@ -26,53 +26,73 @@ document.addEventListener("DOMContentLoaded", () => {
         const answerQuestion3 = document.querySelector("input[type='text'][name='question3']").value;
         console.log("Question 3: " + answerQuestion3.value);
 
-
-
-        let divChosenQuestion1;
-
-        // Remove previous feedbacks for question 1
-        for(let letter of ["A", "B", "C"]) {
-            let div = document.getElementById("divQuestion1Answer" + letter);
-            if(div.getElementsByTagName("p").length > 0) {
-                div.getElementsByTagName("p")[0].remove();
-            }
-        }
-
-        switch (checkBoxCheckedQuestion1.value) {
-            case "A":
-                divChosenQuestion1 = document.getElementById("divQuestion1AnswerA");
-                break;
-            case "B":
-                divChosenQuestion1 = document.getElementById("divQuestion1AnswerB");
-                break;
-            case "C":
-                divChosenQuestion1 = document.getElementById("divQuestion1AnswerC");
-                break;
-            default:
-                break;  
-        }
-
-        // Prevent having multiple Correct or False for the same answers
-        const existingFeedback = divChosenQuestion1.querySelector("p");
-        if (existingFeedback) {
-            existingFeedback.remove();
-        }
-
-
-        let p = document.createElement("p");
-        if(answerQuestion1 === answersQuizQuestions1and2.question1) {
-            p.textContent = "Correct !";
-            p.style.color = "green";
-            p.style.fontWeight = "bold";
-        } else {
-            p.textContent = "False !";
-            p.style.color = "red";
-            p.style.fontWeight = "bold";
-        }
-
-        divChosenQuestion1.appendChild(p);
+        processQuestion1(answerQuestion1);
+        processQuestion2(answersQuestion2);
     
     });
 
 });
 
+
+const processQuestion1 = (answer) => {
+
+    let divChosenQuestion1;
+
+    // Remove previous feedbacks for question 1
+    for(let letter of ["A", "B", "C"]) {
+        let div = document.getElementById("divQuestion1Answer" + letter);
+        if(div.getElementsByTagName("p").length > 0) {
+            div.getElementsByTagName("p")[0].remove();
+        }
+    }
+
+    switch (answer) {
+        case "A":
+            divChosenQuestion1 = document.getElementById("divQuestion1AnswerA");
+            break;
+        case "B":
+            divChosenQuestion1 = document.getElementById("divQuestion1AnswerB");
+            break;
+        case "C":
+            divChosenQuestion1 = document.getElementById("divQuestion1AnswerC");
+            break;
+        default:
+            break;  
+    }
+
+    // Prevent having multiple Correct or False for the same answers
+    const existingFeedback = divChosenQuestion1.querySelector("p");
+    if (existingFeedback) {
+        existingFeedback.remove();
+    }
+
+
+    let p = document.createElement("p");
+    if(answer === answersQuizQuestions1and2.question1) {
+        p.textContent = "Correct !";
+        p.style.color = "green";
+        p.style.fontWeight = "bold";
+    } else {
+        p.textContent = "False !";
+        p.style.color = "red";
+        p.style.fontWeight = "bold";
+    }
+
+    divChosenQuestion1.appendChild(p);
+}
+
+const processQuestion2 = (answers) => {
+
+    let divChosenQuestion2;
+
+    for(let letter of ["A", "B", "C", "D"]){
+        let div = document.getElementById("divQuestion2Answer" + letter);
+        if(div.getElementsByTagName("p").length > 0){
+            div.getElementsByTagName("p")[0].remove();
+        }
+    }
+
+    for(let letter of answers){
+
+    }
+}
