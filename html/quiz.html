@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/base.css">
         <link rel="stylesheet" href="../css/quiz.css">
         <script src="../js/top_button.js"></script>
+        <script src="../js/quiz.js"></script>
     </head>
 
     <body class="quiz_page">
@@ -34,15 +35,15 @@
                         <li>
                             What is Autism?
                             <div>
-                            <input type="radio"/>
+                            <input type="radio" name="question1" value="A"/>
                                 <label for="q1a">A - A mental illness that can be cured with medication.</label>
                             </div>
                             <div>
-                                <input type="radio"/>
+                                <input type="radio" name="question1" value="B"/>
                                 <label for="q1b">B - A neurological and developmental condition that affects how people interact and communicate.</label>
                             </div>
                             <div>
-                                <input type="radio"/>
+                                <input type="radio" name="question1" value="C"/>
                                 <label for="q1c">C - A type of physical disability affecting mobility.</label>
                             </div>
                         </li>
@@ -50,30 +51,31 @@
                         <li>
                             Which of the following are common characteristics of autism? (Select all that apply)
                             <div>
-                                <input type="checkbox"/>
+                                <input type="checkbox" name="question2" value="A"/>
                                 <label for="q2a">A - Difficulty with social interactions</label>
                             </div>
                             <div>
-                                <input type="checkbox"/>
+                                <input type="checkbox" name="question2" value="B"/>
                                 <label for="q2b">B - Repetitive behaviors</label>
                             </div>
                             <div>
-                                <input type="checkbox"/>
+                                <input type="checkbox" name="question2" value="C"/>
                                 <label for="q2c">C - Preference for structured routines</label>
                             </div>
                             <div>
-                                <input type="checkbox"/>
+                                <input type="checkbox" name="question2" value="D"/>
                                 <label for="q2d">D - Always having an intellectual disability</label>
                             </div>
                         </li>
 
                         <li>
                             Give an example of a common stereotype about autism :
-                            <input type="text" class="form_text_field" placeholder="Enter a stereotype..."/>
+                            <input type="text" class="form_text_field" placeholder="Enter a stereotype..." name="question3"/>
                         </li>
                     </ol>
                 <fieldset>
-                <button type="submit">Submit</button>
+
+                <button type="button" id="submitButtonID">Submit</button>
             </form>
         </main>
 
